@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<kolegiji xmlns="ris.unidu.hr">
+  <kolegij id="111">
+    <naziv>Uvod u programiranje</naziv>
+    <ects>7</ects>
+    <nastavnici>
+      <nastavnik tip="nositelj">Mario Miličević</nastavnik>
+      <nastavnik tip="asistent">Tomo Sjekavica</nastavnik>
+    </nastavnici>
+  </kolegij>
+  <kolegij id="222">
+    <naziv>Matematička analiza</naziv>
+    <ects>7</ects>
+    <nastavnici>
+      <nastavnik tip="nositelj">Ivica Martinjak</nastavnik>
+    </nastavnici>
+  </kolegij>
+  <kolegij id="333">
+    <naziv>Arhitektura računala</naziv>
+    <ects>6</ects>
+    <nastavnici>
+      <nastavnik tip="nositelj">Vladimir Lipovac</nastavnik>
+      <nastavnik tip="asistent">Ante Mihaljević</nastavnik>
+    </nastavnici>
+  </kolegij>
+  <kolegij id="444">
+    <naziv>Tehničko pisanje</naziv>
+    <ects>5</ects>
+    <nastavnici>
+      <nastavnik tip="nositelj">Krunoslav Žubrinić</nastavnik>
+      <nastavnik tip="asistent">Ines Obradović</nastavnik>
+    </nastavnici>
+  </kolegij>
+</kolegiji>

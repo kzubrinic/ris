@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kolegiji>
+    <kolegij id="111">
+        <naziv>Uvod u programiranje</naziv>
+		<nastavnici>
+			<nastavnik tip="nositelj">Mario Miličević</nastavnik>
+			<nastavnik tip="asistent">Tomo Sjekavica</nastavnik>
+		</nastavnici>	
+        <ects>7</ects>
+    </kolegij>
+    <kolegij id="222">
+        <naziv>Matematička analiza</naziv>
+		<nastavnici>
+			<nastavnik tip="nositelj">Ivica Martinjak</nastavnik>
+		</nastavnici>	
+        <ects>7</ects>
+    </kolegij>
+    <kolegij id="333">
+        <naziv>Arhitektura računala</naziv>
+		<nastavnici>
+			<nastavnik tip="nositelj">Vladimir Lipovac</nastavnik>
+			<nastavnik tip="asistent">Ante Mihaljević</nastavnik>
+		</nastavnici>
+        <ects>6</ects>
+    </kolegij>
+    <kolegij id="444">
+        <naziv>Tehničko pisanje</naziv>
+		<nastavnici>
+			<nastavnik tip="nositelj">Krunoslav Žubrinić</nastavnik>
+			<nastavnik tip="asistent">Ines Obradović</nastavnik>
+		</nastavnici>
+        <ects>5</ects>
+    </kolegij>
+    <kolegij id="555">
+        <naziv>Engleski jezik</naziv>
+		<nastavnici>
+			<nastavnik tip="nositelj">Ivana Nakić-Lučić</nastavnik>
+		</nastavnici>
+        <ects>5</ects>
+    </kolegij>
+</kolegiji>
