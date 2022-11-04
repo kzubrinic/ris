@@ -1,0 +1,42 @@
+{
+  "kolegiji": [
+      {
+        "naziv": "Uvod u programiranje",
+        "nastavnici": [
+            "Mario Miličević",
+            "Tomo Sjekavica"
+          ],
+        "ects": 7
+      },
+      {
+        "naziv": "Matematička analiza",
+        "nastavnici": [
+          "Ivica Martinjak"
+        ],
+        "ects": 7
+      },
+      {
+        "naziv": "Arhitektura računala",
+        "nastavnici": [
+            "Vladimir Lipovac",
+            "Ante Mihaljević"
+        ],
+        "ects": 6
+      },
+      {
+        "naziv": "Tehničko pisanje",
+        "nastavnici": [
+            "Krunoslav Žubrinić",
+            "Ines Obradović"
+          ],
+        "ects": 5
+      },
+      {
+        "naziv": "Engleski jezik",
+        "nastavnici": [
+          "Ivana Nakić-Lučić"
+        ],
+        "ects": 5
+      }
+    ]
+}
