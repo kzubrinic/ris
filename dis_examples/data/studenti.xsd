@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:simpleType name="vrstaTelefona">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Fiksni" />
+            <xs:enumeration value="Mobilni" />
+        </xs:restriction>
+    </xs:simpleType> 
+
+<xs:complexType name="telefon">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+       <xs:attribute name="vrsta" type="vrstaTelefona" />
+    </xs:extension>
+  </xs:simpleContent>
+</xs:complexType>
+
+<xs:complexType name="kontakt">
+        <xs:sequence>
+            <xs:element name="Telefon" type="telefon" minOccurs="0" maxOccurs="unbounded" />
+            <xs:element name="Email" type="xs:string" minOccurs="1" maxOccurs="unbounded" />
+            <xs:element name="KorisnickoIme" type="xs:string" minOccurs="1" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+
+ <xs:complexType name="adresa">
+        <xs:sequence>
+            <xs:element name="Ulica" type="xs:string" minOccurs="0" />
+            <xs:element name="Broj" type="xs:string" minOccurs="0" />
+            <xs:element name="Grad" type="xs:string" minOccurs="0" />
+        </xs:sequence>
+    </xs:complexType>
+
+<xs:complexType name="osoba">
+        <xs:sequence>
+            <xs:element name="Ime" type="xs:string" />
+            <xs:element name="Prezime" type="xs:string" minOccurs="0" />
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:string" use="required"/>
+    </xs:complexType>
+
+<xs:complexType name="studenti">
+  <xs:sequence>
+    <xs:element name="Osoba" type="osoba" />
+    <xs:element name="Studij" type="xs:string" minOccurs="0" />
+    <xs:element name="Adresa" type="adresa" minOccurs="0" />
+    <xs:element name="KontaktPodaci" type="kontakt" minOccurs="0" />
+  </xs:sequence>
+</xs:complexType>
+
+<xs:element name="Studenti" type="studenti"/>
+
+</xs:schema> 

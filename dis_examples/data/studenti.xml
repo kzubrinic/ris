@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Studenti SYSTEM "studenti.dtd" >
+<Studenti>
+  <Osoba id="o-12345">
+ 		<Ime>Pero</Ime>
+ 		<Prezime>Perić</Prezime>
+ 	</Osoba>
+ 	<Studij>Sistem analitičar</Studij>
+ 	<Adresa>
+ 		<Ulica>U gradu</Ulica>
+ 		<Broj>247</Broj>
+ 		<Grad>Zagreb</Grad>
+ 	</Adresa>
+ 	<KontaktPodaci>
+ 		<Telefon>01-111-777</Telefon>
+ 		<Telefon vrsta="Mobilni">098-111-1778</Telefon>
+ 		<Email>pperic@zg.tel.hr</Email>
+ 		<KorisnickoIme>pperic</KorisnickoIme>
+ 	</KontaktPodaci>
+ </Studenti>

@@ -1,0 +1,15 @@
+<!ELEMENT Studenti (Osoba, Studij?, Adresa?, KontaktPodaci?)>
+ 	<!ELEMENT Osoba (Ime, Prezime?)>
+ 		<!ELEMENT Ime (#PCDATA)>
+ 		<!ELEMENT Prezime (#PCDATA)>
+ 	<!ELEMENT Studij (#PCDATA)>
+ 	<!ELEMENT Adresa (Ulica?, Broj?, Grad?)>
+ 		<!ELEMENT Ulica (#PCDATA)>
+ 		<!ELEMENT Broj (#PCDATA)>
+ 		<!ELEMENT Grad (#PCDATA)>
+ 	<!ELEMENT KontaktPodaci (Telefon*, Email+, KorisnickoIme+)>
+ 		<!ELEMENT KorisnickoIme (#PCDATA)>
+ 		<!ELEMENT Telefon (#PCDATA)>
+ 		<!ELEMENT Email (#PCDATA)>
+  <!ATTLIST Telefon vrsta (Fiksni|Mobilni) #IMPLIED>
+  <!ATTLIST Osoba id ID #REQUIRED> 
