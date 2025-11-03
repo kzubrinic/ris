@@ -16,30 +16,26 @@ package hr.unidu.ris.parsingxml.sax;
 	  public void startElement(String uri, String localName, String qName, Attributes attributes) {
 	      // reset the tag value
 	      currentValue.setLength(0);
-
-	      if (qName.equalsIgnoreCase("kolegij")) {
-	          // dohvat atributa po nazivu
-	          String id = attributes.getValue("id");
-	          System.out.printf("id kolegija : %s%n", id);
-	      }
-
-	      if (qName.equalsIgnoreCase("nastavnik")) {
-	    	// dohvat atributa po indeksu; 0 = prvi atribut
-	          String tip = attributes.getValue(0);
-	          System.out.printf("Tip nastavnika: %s%n", tip);
+	      System.out.printf("Element: %s%n", qName);
+	      if (attributes.getLength() > 0) {
+	          for (int i = 0; i < attributes.getLength(); i++) {
+	              String attrNaziv = attributes.getQName(i);
+	              String attrVrijednost = attributes.getValue(i);
+	              System.out.println("Atribut: " + attrNaziv + " = " + attrVrijednost);
+	          }
 	      }
 	  }
 
 	  @Override
 	  public void endElement(String uri, String localName, String qName) {
 	      if (qName.equalsIgnoreCase("naziv")) {
-	          System.out.printf("Naziv kolegija : %s%n", currentValue.toString());
+	          System.out.printf("\t\tNaziv kolegija : %s%n", currentValue.toString());
 	      }
 	      if (qName.equalsIgnoreCase("nastavnik")) {
-	    	  System.out.printf("Ime nastavnika: %s%n", currentValue.toString());
+	    	  System.out.printf("\t\t\tIme nastavnika: %s%n", currentValue.toString());
 	      }
 	      if (qName.equalsIgnoreCase("ects")) {
-	          System.out.printf("ECTS: %s%n", currentValue.toString());
+	          System.out.printf("\t\tECTS: %s%n", currentValue.toString());
 	      }
 	  }
 
